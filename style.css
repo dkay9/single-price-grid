@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root{
+  --cyan: hsl(179, 62%, 43%);
+  --cyan2: hsl(179, 40%, 55%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --Grayish-blue: hsl(218, 22%, 67%);
+  --white: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+    background-color: var(--light-gray);
+}
+main{
+    margin-top: 7em;
+}
+.wrapper{
+    max-width: 360px;
+    max-height: 700px;
+    justify-content: center;
+    align-items: center;
+    margin: 88px auto;
+}
+.card-top{
+    width: 100%;
+    background-color: #fff;
+    padding: 1em;
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 2em;
+}
+.cb1{
+    width: 100%;
+    background-color: #2bb3b1;
+    padding: 1em;
+}
+.cb1p{
+    margin-top: 0.9em;
+    color: white;
+    opacity: 0.90;
+}
+.btn{
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 2em;
+    background-color: #bfdf32;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff;
+}
+.card-top h2{
+    color: hsl(179, 62%, 43%);
+}
+.card-top p{
+    padding-right: 2em;
+    line-height: 1.5;
+    margin-top: 1.5em;
+    color: var(--Grayish-blue);
+}
+.card-top h3{
+    margin-top: 1.5em;
+    color: hsl(71, 73%, 54%);
+}
+.cb2{
+    width: 100%;
+    background-color: #4abebd;
+    padding: 1em;
+    padding-right: 5em;
+    text-align: left;
+}
+.price h1, .cb1 h3, .cb2 h3{
+    color: #fff;
+}
+.price p{
+    color: white;
+    opacity: 0.90;
+}
+.cb2 p{
+    line-height: 1.5;
+    margin-top: 1.5em;
+    color: white;
+    opacity: 0.90;
+    width: 90%;
+}
+@media (min-width: 800px) {
+    .wrapper{
+        width: 60em;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 400px
+    }
+    .card-top{
+    width: 40em;
+    background-color: #fff;
+    padding: 1em;
+    }
+    .card-bottom{
+        display: flex;
+        width: 40em;
+    }
+    .btn{
+        box-shadow: 0 10px 15px #328b89;
+    }
+}
